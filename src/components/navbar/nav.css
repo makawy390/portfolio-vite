@@ -1,0 +1,18 @@
+.navigation{
+    background: var(--backgroud-image);
+    position: absolute;
+    width: 100%;
+}
+.list-navigation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-content: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+.list-navigation li a{
+ display: block;
+ text-align: center;
+}

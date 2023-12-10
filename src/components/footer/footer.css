@@ -1,0 +1,29 @@
+
+.footer{
+    background: var(--backgroud-image);    
+}
+.footer .flex-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-footer ul{
+    display: flex;
+    list-style: none;
+}
+.flex-footer ul li{
+    padding-left: 15px;
+}
+ul li svg{
+    font-size: 20px;
+}
+.flex-footer h6{
+    color: var(--color-four);
+    font-size: 14px;
+}
+@media (min-width : 250px) and (max-width : 1199px){
+    .footer .flex-footer{
+        flex-wrap: wrap;
+    }
+  }

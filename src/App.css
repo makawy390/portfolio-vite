@@ -1,0 +1,8 @@
+:root{
+ --backgroud-image :  linear-gradient(120deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
