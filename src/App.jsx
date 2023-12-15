@@ -1,18 +1,13 @@
 
 import './App.css'
-// import Home from './components/land-page/Home'
 import {createBrowserRouter , RouterProvider} from 'react-router-dom'
-// import About from './components/about/About';
-// import Projects from './components/projects/Projects';
-// import Contact from './components/contact/Contact';
 import Root from './components/root/Root';
 import { lazy } from 'react';
-
 const Home = lazy(()=>import ('./components/land-page/Home'));
 const About = lazy(()=>import ('./components/about/About'));
 const Projects = lazy(()=>import ('./components/projects/Projects'));
-const Contact = lazy(()=>import ('./components/root/Root'));
-
+const Contact = lazy(()=>import ('./components/contact/Contact'));
+const Skills = lazy(()=> import ('./components/skills/Skills')) 
 function App() {
   const router = createBrowserRouter([
     {
@@ -26,7 +21,11 @@ function App() {
           element : <About />
         },
         {
-          path : '/projects',
+          path : '/skills',
+          element : <Skills />
+        },
+        {
+          path : '/portfolio',
           element : <Projects />
         },
         {

@@ -1,22 +1,26 @@
 
 .footer{
-    background: var(--backgroud-image);    
+    background: var(--color-par);  
+    color: #fff;
 }
 .footer .flex-footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 20px;
 }
 
 .flex-footer ul{
     display: flex;
     list-style: none;
+    padding: 10px;
 }
 .flex-footer ul li{
     padding-left: 15px;
 }
-ul li svg{
+.footer ul li svg{
     font-size: 20px;
+    color: #fff;
 }
 .flex-footer h6{
     color: var(--color-four);

@@ -37,6 +37,7 @@ const Projects = () => {
   return (
     <div className='projects'>
       <Container fixed>
+        <h3>OUR Projects</h3>
 <Grid container spacing={2}>
         {filtrationProjects}
       </Grid>

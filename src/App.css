@@ -1,8 +1,27 @@
 :root{
  --backgroud-image :  linear-gradient(120deg, #e3ffe7 0%, #d9e7ff 100%);
+ --color-par : #8a8da3
 }
 body {
-  margin: 0 !important;
-  padding: 0 !important;
-  box-sizing: border-box !important;
+
+  font-family: Poppins, sans-serif;
+  line-height: 1.7;
+}
+*{
+  border: none;
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+}
+
+.root-element{
+  background-color: #fbfbfe;
+  color: #333;
+}
+.root-element.dark{
+  background-color: #161927;
+  color: #fff;
 }

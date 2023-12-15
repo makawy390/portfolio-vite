@@ -1,24 +1,25 @@
 import { AiTwotoneHome } from "react-icons/ai";
 import { BiSolidContact } from "react-icons/bi";
-import { GrProjects } from "react-icons/gr";
-import { FcAbout } from "react-icons/fc";
+import { FcContacts } from "react-icons/fc";
 import { NavLink } from 'react-router-dom';
-import { Container } from '@mui/material';
+import {FaCircleUser} from 'react-icons/fa6';
+// import {BsBookmarkStarFill} from 'react-icons/bs'
+import {BsJournalBookmarkFill} from 'react-icons/bs'
+
+// import { Container } from '@mui/material';
 import './nav.css'
-
+// import { useState } from "react";
 const Navbar = () => {
-
 
   return (
    <div className='navigation'>
-<Container fixed>
       <ul className='list-navigation'>
-       <li><NavLink to='/' value="home" ><AiTwotoneHome /> </NavLink><span>Homr</span> </li>
-       <li><NavLink to='/about' value="About" ><FcAbout /></NavLink><span>About</span> </li>
-       <li><NavLink to='/projects' value='Projects' ><BiSolidContact /> </NavLink> <span>Projects</span></li>
-       <li><NavLink to='/contact' value="Contact"><GrProjects /> </NavLink><span>Contact</span> </li>
+       <li><NavLink to='/'><AiTwotoneHome  />{/*<span>Home</span>*/} </NavLink> </li>
+       <li><NavLink to='/about'  ><FaCircleUser  />{/*<span>About</span>*/}</NavLink> </li>
+       <li><NavLink to='/skills'  ><BsJournalBookmarkFill />{/*<span>About</span>*/}</NavLink> </li>
+       <li><NavLink to='/portfolio'  ><BiSolidContact /> {/*<span>Portfolio</span>*/}</NavLink> </li>
+       <li><NavLink to='/contact' ><FcContacts /> {/*<span>Contact</span> */}</NavLink> </li>
       </ul>
-</Container>
 
    </div>
   )

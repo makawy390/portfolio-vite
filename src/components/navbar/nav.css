@@ -1,18 +1,42 @@
 .navigation{
-    background: var(--backgroud-image);
-    position: absolute;
-    width: 100%;
+    position: fixed;
+    bottom: 1rem;
+    gap: 0.8rem;
+    left: 50%;
+    padding: 0.7rem 1.7rem;
+    transform: translateX(-50%);
+    width: max-content;
+    z-index: 2;
 }
 .list-navigation{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    align-content: center;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+    background: var(--backgroud-image);
+    border-radius: 50px;
+    padding: 0.7rem ;
+    width: 100%;
+}
+.list-navigation li{
+    padding: 0 15px;
 }
 .list-navigation li a{
  display: block;
  text-align: center;
+ transition: 0.5s ease-in-out;
+}
+.list-navigation li a svg{
+    font-size: 22px;
+}
+.list-navigation li a.active{
+    background-color: #fff;
+    border-radius: 50px;
+    padding: 12px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.list-navigation li a span{
+    display: block;
 }
