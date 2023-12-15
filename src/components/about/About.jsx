@@ -16,7 +16,7 @@ I am committed to delivering high-quality web applications that are optimized fo
     <span className='graduation'>
     </span>
       <FcGraduationCap />
-      <Grid container spacing={2} sx={{paddingLeft: "60px"}}>
+      <Grid container spacing={2} sx={{paddingLeft: "40px"}}>
         <Grid item md={3}>
           <span>Oct 2017 – July 2021</span>
         </Grid>
