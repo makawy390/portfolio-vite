@@ -1,11 +1,11 @@
-.main{
-min-height: calc(100vh - 88px);
-background-color: #fbfbfe;
-color: #161927;
-transition: all 0.5s ease-in-out;
+.main {
+  min-height: calc(100vh - 48.19px);
+  background-color: var(--main-color);
+  color: var(--main-background);
+  transition: all 0.5s ease-in-out;
 }
-.main.dark{
- background-color: #161927;
- background-color: #181823;
- color: #fbfbfe;
+.main.dark {
+  background-color: var(--main-background);
+  /* background-color: #181823; */
+  color: var(--main-color);
 }
