@@ -1,12 +1,11 @@
 .skills {
-  padding: 100px 0;
+  padding: 40px 0;
 }
 .box {
-  background: var(--color-box);
+  background-color: #eee;
   padding: 25px 35px;
-  margin-top: 10px;
+  /* margin-top: 20px; */
   border-radius: 4px;
-  color: var(--main-color-box);
 }
 .box h2 {
   margin-bottom: 20px;
@@ -34,16 +33,12 @@
 .personal-skills {
   padding: 40px 0;
 }
-.box-skills {
+.listed-personal-skills li {
+  background-color: #3333;
   width: 100%;
-  padding: 10px;
-  color: var(--main-color-box);
-}
-.box-skills span {
-  background: var(--color-box);
-  width: 100%;
-  padding: 15px 25px;
-  display: block;
+  margin-right: 15px;
+  padding: 10px 25px;
+  color: #333;
 }
 .personal-skills h2,
 .techincal-skills h2 {
