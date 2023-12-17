@@ -1,10 +1,15 @@
-import {Spinner} from '@mui/material'
+import { ProgressSpinner } from "primereact/progressspinner";
 const SpinnerApp = () => {
   return (
-    <div>
-     <Spinner  speed='0.65d' emptyColor='gray.400' color='blue.800' size='xl'/>
+    <div className="spinn">
+      <ProgressSpinner
+        style={{ width: "50px", height: "50px" }}
+        strokeWidth="8"
+        fill="var(--surface-ground)"
+        animationDuration=".5s"
+      />
     </div>
-  )
-}
+  );
+};
 
-export default SpinnerApp
+export default SpinnerApp;

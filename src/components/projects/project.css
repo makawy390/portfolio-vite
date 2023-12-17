@@ -1,5 +1,8 @@
 .projects {
   padding: 100px 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
 }
 .projects img {
   width: 100%;
@@ -24,7 +27,8 @@
   color: #fff;
 }
 .box {
-  background-color: #eceff1;
+  background-color: var(--color-box);
+  color: #333;
   height: 100%;
   padding: 10px 25px;
 }

@@ -9,6 +9,8 @@ import "./project.css";
 
 import { Container, Grid } from "@mui/material";
 import { Link } from "react-router-dom";
+import { Spinner } from "@chakra-ui/react";
+import SpinnerApp from "../root/Spinner";
 
 const Projects = () => {
   const [project, setProject] = React.useState([]);
@@ -27,7 +29,7 @@ const Projects = () => {
       <Grid item md={6} xs={12}>
         <div className="box">
           <h3>{project.title}</h3>
-          <Grid container spacing={1.5}>
+          <Grid container spacing={1}>
             {project?.technolgies?.split(",")?.map((ele, index) => (
               <Grid item xs={6} key={index}>
                 <FcOk /> <span>{ele}</span>
@@ -55,13 +57,8 @@ const Projects = () => {
       <Container fixed>
         <h3>OUR Projects</h3>
         <Grid container spacing={2}>
-          {filtrationProjects}
-          <ScrollTop
-            target="parent"
-            threshold={100}
-            className="w-2rem h-2rem border-round bg-primary"
-            icon="pi pi-arrow-up text-base"
-          />
+          {project.length === 0 ? <SpinnerApp /> : <>{filtrationProjects}</>}
+          <ScrollTop />
         </Grid>
       </Container>
     </div>

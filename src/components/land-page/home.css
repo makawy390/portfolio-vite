@@ -4,14 +4,10 @@
 }
 .home .list {
   list-style: none;
-  display: grid;
-  align-items: center;
-  height: 100%;
-  align-content: center;
-  justify-content: center;
+  display: flex;
 }
 .list li {
-  padding: 8px 0;
+  padding-right: 15px;
 }
 .list li svg {
   font-size: 25px;
